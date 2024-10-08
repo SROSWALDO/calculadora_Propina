@@ -6,8 +6,7 @@ import { menuItems } from "./data/db";
 import useOrder from "./Hooks/useOrder";
 
 function App() {
-
-  const { addItem,order, removeItem, tip, setTip } = useOrder()
+  const { addItem, order, removeItem, tip, setTip, placeOrder } = useOrder();
 
   return (
     <>
@@ -28,14 +27,22 @@ function App() {
         </div>
 
         <div>
-          
           <div className="border border-dashed border-slate-300 p-5 rounded-lg space-y-10">
-            <OrderContent order={order} removeItem={removeItem}/>
+            {order.length > 0 ? (
+                <>
+                  <OrderContent order={order} removeItem={removeItem} />
 
-            <TipForm setTip={setTip} />
+                  <TipForm setTip={setTip} tip={tip} />
 
-            <OrderTotals order={order} tip={tip} />
-
+                  <OrderTotals
+                    order={order}
+                    tip={tip}
+                    placeOrder={placeOrder}
+                  />
+                </>
+              ): (
+                <p className="text-3xl font-black">La orden esta vacia</p>
+              )}
           </div>
         </div>
       </main>

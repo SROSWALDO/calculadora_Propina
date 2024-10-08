@@ -3,10 +3,11 @@ import { OrderItem } from "../types/types"
 
 type OrderTotalsProps = {
     order: OrderItem[],
-    tip: number
+    tip: number,
+    placeOrder: () => void
 }
 
-export default function OrderTotals({order, tip} : OrderTotalsProps) {
+export default function OrderTotals({order, tip, placeOrder} : OrderTotalsProps) {
 
     const subTotal = useMemo(() => order.reduce((total, item) => total + (item.quantity * item.price), 0) , [order])
     //usememo que se ejecute cuando ciertas dependencias cambien
@@ -14,6 +15,8 @@ export default function OrderTotals({order, tip} : OrderTotalsProps) {
     const tipAmount = useMemo(() => subTotal * tip, [tip, order])
 
     const totalAmount = useMemo(() => subTotal + tipAmount , [tip, order])
+
+    
 
   return (
     <>
@@ -32,7 +35,9 @@ export default function OrderTotals({order, tip} : OrderTotalsProps) {
         </p>
     </div>
 
-    <button></button>
+    <button onClick={() => placeOrder()} className="w-full bg-black p-3 uppercase text-white font-bold mt-10 disabled:opacity-10" disabled={totalAmount === 0}>
+        Guardar Orden
+    </button>
       
     </>
   )
