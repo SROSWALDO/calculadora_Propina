@@ -15,6 +15,12 @@ This is a **Tip Calculator** project built with **React** and **TypeScript**. Th
          style="max-width: 100%;">
 </a>
 
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" 
+     alt="Tailwind CSS" 
+     style="max-width: 100%;">
+</a>
+
 
 
 ## Features
