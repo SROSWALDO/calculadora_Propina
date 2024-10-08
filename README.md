@@ -4,6 +4,12 @@
 
 This is a **Tip Calculator** project built with **React** and **TypeScript**. The application allows users to easily calculate the tip amount based on the bill total, the tip percentage, and the number of people sharing the bill. It is designed to be **responsive** and user-friendly, with a clean and modern interface.
 
+## Technologies
+<a target="_blank" href="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white">
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React">
+</a>
+
+
 ## Features
 
 - **Bill amount input**: Enter the total bill amount.
