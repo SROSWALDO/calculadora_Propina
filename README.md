@@ -9,6 +9,13 @@ This is a **Tip Calculator** project built with **React** and **TypeScript**. Th
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React">
 </a>
 
+<a target="_blank" rel="noopener noreferrer nofollow" href="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" 
+         alt="TypeScript" 
+         style="max-width: 100%;">
+</a>
+
+
 
 ## Features
 
